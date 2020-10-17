@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+body {
+  font-family: 'Righteous', cursive;
+  color: #f34a4a;
+  line-height: 1.7;
+  font-size: 19px;
+  /* background-image: linear-gradient(to top,orange ,brown); */
+  background-color: #0a0a0af8;
+  /* background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23424242' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
+}
+
+
+
+
+.link {
+  color: #efefef;
+  display: inline-block;
+  padding: 3px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.3s ease all;
+}
+
+.link:hover {
+  color: #f59494;
+  transform: scale(1.1);
+}
+
+/_ nasa photo ---------- _/
+
+.nasa-photo {
+  display: flex;
+  padding: 40px;
+  margin: 0 auto;
+  max-height: 100%;
+}
+
+.nasa-photo img {
+  width: 50%;
+  margin-right: 50px;
+  object-fit: contain;
+  max-height: 60vh;
+  border-radius: 100%;
+}
+
+.nasa-photo h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: rgb(248, 238, 238);
+}
+
+.nasa-photo .date {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: rgb(243, 237, 237);
+
+}
+
+.nasa-photo .explanation {
+  color: rgb(243, 240, 240);
+  font-size: 16px;
+  text-align: justify;
+}
+
+@media (max-width: 1780px) {
+  .nasa-photo {
+    display: block;
+  }
+
+  .nasa-photo img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+    box-shadow: 2px 10px 30px rgb(250, 248, 248);
+  }
+}
+
+.home {
+  max-width: 550px;
+  min-height: 450px;
+  padding-left: 15px;
+  padding-right: 15px;
+background-color: rgb(7, 23, 24);
+  display: block;
+  margin: 0 auto;
+
+  /* margin-top: 10%; */
+  /* height: 100vh; */
+  align-items: center;
+  justify-content: center;
+}
+
+.home-link {
+  margin-left: 20%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  font-size: 20px;
+  background: #48ccf5ce;
+  display: inline-block;
+  padding: 10px 20px;
+  color: rgb(247, 241, 241);
+  border-radius: 20%;
+  text-decoration: none;
+  transition: 0.1s ease all;
+  text-transform: uppercase;
+}
+
+.home-link:hover {
+  border-radius: 5px;
+  background: #070707d2;
+  color:rgb(26, 194, 245);
+}
