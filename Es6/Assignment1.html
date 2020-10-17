@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReactJS Assignment 1</title>
+    <style>
+        body
+        {
+            margin: none;
+            top: 0;
+            background-color: deeppink;
+        }
+        button
+        {
+            margin-top: 20%;
+            padding: 10px;
+            width: 15%;
+            background-color: black;
+            color: white;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="show_arr()" id="btn1" style="margin-left: 35%;" >Show Array Methods</button>
+    <button onclick="show_str()">Show String Methods</button>
+    <script>
+        function show_arr(){
+        //ARRAY METHODS
+        var aysh=["This","is","my","first","Assignment"]
+        document.write("<h2>MY ARRAY : </h2>"+aysh)
+        document.write("<h1>tostring() method</h1>")
+        document.write("<h2>Functionality</h2>")
+        document.write("It converts an array to a string of (comma separated) array values.")
+        document.write("<h2>Example</h2>")
+        document.write(aysh.toString());
+
+        document.write("<h1>join() method</h1>")
+        document.write("<h2>Functionality</h2>")
+        document.write("The join() method also joins all array elements into a string.<br>It behaves just like toString(), but in addition you can specify the separator:")
+        document.write("<h2>Example</h2>")
+        document.write(aysh.join("^^"));
+
+        document.write("<h1>pop() method</h1>")
+        document.write("<h2>Functionality</h2>")
+        document.write("The pop() method removes the last element from an array")
+        document.write("<h2>Example</h2>")
+        var x=aysh.pop();
+        // document.write(aysh.pop());
+        document.write("Popped element : "+x);
+        document.write("<br>"+aysh);
+
+        document.write("<h1>push() method</h1>")
+        document.write("<h2>Functionality</h2>")
+        document.write("The push() method adds a new element to an array (at the end)")
+        document.write("<h2>Example</h2>")
+        var a=aysh.push("pushed Assignment");
+        document.write("<br>"+aysh);
+
+        document.write("<h1>shift() method</h1>")
+        document.write("<h2>Functionality</h2>")
+        document.write("The shift() method removes a element to an array (from the beginning)")
+        document.write("<h2>Example</h2>")
+        var a=aysh.shift();
+        document.write("<br>After applying shift method : <br>"+aysh);
+
+        document.write("<h1>unshift() method</h1>")
+        document.write("<h2>Functionality</h2>")
+        document.write("The unshift() method adds a new element to an array (at the beginning)")
+        document.write("<h2>Example</h2>")
+        var a=aysh.unshift("Unshift this");
+        document.write("<br>After applying unshift method : <br>"+aysh);
+
+        
+        document.write("<h1>changing index value</h1>")
+        document.write("<h2>Functionality</h2>")
+        document.write("Array elements are accessed using their index number and can be changed too")
+        document.write("<h2>Example</h2>")
+        aysh[0]="This"
+        document.write("<br>After applying change index value method : <br>"+aysh);
+
+        document.write("<h1>length() method</h1>")
+        document.write("<h2>Functionality</h2>")
+        document.write("The length property provides an easy way to append a new element to an array:")
+        document.write("<h2>Example</h2>")
+        document.write("<br>"+aysh);
+        document.write("<br>length method : "+aysh.length);
+
+        document.write("<h1>delete operator</h1>")
+        document.write("<h2>Functionality</h2>")
+        document.write("JavaScript arrays are objects, elements can be deleted by using the JavaScript operator delete:")
+        document.write("<h2>Example</h2>")
+        delete aysh[1];
+        document.write("<br>After applying delete operator method : <br>"+aysh);
+
+        document.write("<h1>splice() method</h1>")
+        document.write("<h2>Functionality</h2>")
+        document.write("The splice() method can be used to add new items to an array")
+        document.write("<h2>Example</h2>")
+        aysh.splice(1,0,"splice is")
+        document.write("<br>After applying splice method : <br>"+aysh);
+        document.write("<br>The first parameter (1) defines the position where new elements should be added (spliced in).<br>The second parameter (0) defines how many elements should be removed.")
+
+        document.write("<h1>concat() method</h1>")
+        document.write("<h2>Functionality</h2>")
+        document.write("The concat() method creates a new array by merging (concatenating) existing arrays")
+        document.write("<h2>Example</h2>")
+        var aysh2=["[I","am","Concated]"]
+        var concats=aysh.concat(aysh2,"[Concated2]")
+        document.write("<br>After applying concat method : <br>"+concats);
+
+        document.write("<h1>splice() method</h1>")
+        document.write("<h2>Functionality</h2>")
+        document.write("The slice() method slices out a piece of an array into a new array.")
+        document.write("<h2>Example</h2>")
+        var aysh_sliced=aysh.slice(5)
+        document.write("<br>After applying first slice method : <br>"+aysh);
+        var aysh_sliced=aysh.slice(1,4)
+        document.write("<br>After applying second slice method : <br>"+aysh_sliced);
+
+        var aysh=["This","is","my","first","Assignment"]
+        document.write("<h1>sort() method</h1>")
+        document.write("<h2>Functionality</h2>")
+        document.write("The sort() method sorts an array alphabetically:")
+        document.write("<h2>Example</h2>")
+        document.write(aysh.sort());
+
+        var aysh=["This","is","my","first","Assignment"]
+        document.write("<h1>reverse() method</h1>")
+        document.write("<h2>Functionality</h2>")
+        document.write("The reverse() method reverses the elements in an array.<br>You can use it to sort an array in descending order:")
+        document.write("<h2>Example</h2>")
+        document.write(aysh.reverse());
+
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.write("<h1>copyWithin() method</h1>")
+        document.write("<h2>Functionality</h2>")
+        document.write("Copy the first two array elements to the last two array elements:")
+        document.write("<h2>Example</h2>")
+        fruits.copyWithin(2, 0);
+        document.write("After copyWithin() : "+fruits)
+
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];   
+        document.write("<h1>entries() method</h1>")
+        document.write("<h2>Functionality</h2>")
+        document.write("The entries() method returns an Array Iterator object with key/value pairs.For each item in the original array, the new iteration object will contain an array with the index as the key, and the item value as the value:")
+        document.write("<h2>Example</h2>")
+        var f = fruits.entries();
+        for (x of f) {
+        document.write("After entries() : "+x+"<br>")}
+
+        var ages = [32, 33, 16, 40];
+        document.write("<h1>every() method</h1>")
+        document.write("<h2>Functionality</h2>")
+        document.write("The every() method checks if all elements in an array pass a test (provided as a function).")
+        document.write("<h2>Example</h2>")
+        function checkAdult(age) {
+        return age >= 18;
+        }
+        document.write("After every() : "+ages.every(checkAdult))
+
+        var ages = [32, 33, 16, 40];
+        document.write("<h1>filter() method</h1>")
+        document.write("<h2>Functionality</h2>")
+        document.write("The filter() method creates an array filled with all array elements that pass a test (provided as a function).")
+        document.write("<h2>Example</h2>")
+        function checkAdult(age) {
+        return age >= 18;
+        }
+        document.write("After filter() : "+ages.filter(checkAdult))
+
+        var ages = [32, 33, 16, 40];
+        document.write("<h1>find() method</h1>")
+        document.write("<h2>Functionality</h2>")
+        document.write("The filter() method creates an array filled with all array elements that pass a test (provided as a function).")
+        document.write("<h2>Example</h2>")
+        function checkAdult(age) {
+        return age >= 18;
+        }
+        document.write("After find() : "+ages.find(checkAdult))
+
+        var ages = [32, 33, 16, 40];
+        document.write("<h1>findIndex() method</h1>")
+        document.write("<h2>Functionality</h2>")
+        document.write("The findIndex() method returns the index of the first element in an array that pass a test (provided as a function).")
+        document.write("<h2>Example</h2>")
+        function checkAdult(age) {
+        return age >= 18;
+        }
+        document.write("After findIndex() : "+ages.findIndex(checkAdult))
+
+        document.write("<h1>forEach() method</h1>")
+        document.write("<h2>Functionality</h2>")
+        document.write("The forEach() method calls a function once for each element in an array, in order.")
+        document.write("<h2>Example</h2>")
+        fruits.forEach(myFunction);
+                function myFunction(item, index) {
+            document.write("After forEach() : "+index + ":" + item + "<br>")
+        }
+
+        var myArr = Array.from("ABCDEFG");
+        document.write("<h1>Array.from() method</h1>")
+        document.write("<h2>Functionality</h2>")
+        document.write("The Array.from() method returns an Array object from any object with a length property or an iterable object.")
+        document.write("<h2>Example</h2>")
+        document.write(myArr);
+
+        }
+        function show_str(){
+            //STRING METHODS
+            var aysh_txt="This is my first Assignment";
+
+            document.write("<h2>MY STRING : </h2>"+aysh_txt)
+            document.write("<h1>length() method</h1>")
+            document.write("<h2>Functionality</h2>")
+            document.write("The length property returns the length of a string")
+            document.write("<h2>Example</h2>")
+            document.write(aysh_txt.length);
+
+            document.write("<h1>indexof() method</h1>")
+            document.write("<h2>Functionality</h2>")
+            document.write("The length property returns the length of a string: is")
+            document.write("<h2>Example</h2>")
+            document.write(aysh_txt.indexOf("is"));
+
+            document.write("<h1>lastindexof() method</h1>")
+            document.write("<h2>Functionality</h2>")
+            document.write("The length property returns the length of a string: first")
+            document.write("<h2>Example</h2>")
+            document.write(aysh_txt.lastIndexOf("first"));
+
+            document.write("<h1>search() method</h1>")
+            document.write("<h2>Functionality</h2>")
+            document.write("The length property returns the length of a string: first")
+            document.write("<h2>Example</h2>")
+            document.write(aysh_txt.search("Assignment"));
+
+            var aysh_txt="This is my first Assignment";
+            document.write("<h1>slice() method</h1>")
+            document.write("<h2>Functionality</h2>")
+            document.write("The length property returns the length of a string: first")
+            document.write("<h2>Example</h2>")
+            document.write(aysh_txt.slice(3,7));
+
+            var aysh_txt="This is my first Assignment";
+            document.write("<h1>substring() method</h1>")
+            document.write("<h2>Functionality</h2>")
+            document.write("The length property returns the length of a string: first")
+            document.write("<h2>Example</h2>")
+            document.write(aysh_txt.substring(3,7));
+
+            var aysh_txt="This is my first Assignment";
+            document.write("<h1>substr() method</h1>")
+            document.write("<h2>Functionality</h2>")
+            document.write("The length property returns the length of a string: first")
+            document.write("<h2>Example</h2>")
+            document.write(aysh_txt.substr(0,3));
+
+            var aysh_txt="This is my first Assignment";
+            document.write("<h1>replace() method</h1>")
+            document.write("<h2>Functionality</h2>")
+            document.write("The length property returns the length of a string: first")
+            document.write("<h2>Example</h2>")
+            document.write(aysh_txt.replace("my","yours"));
+
+            var aysh_txt="This is my first Assignment";
+            document.write("<h1>replace() method</h1>")
+            document.write("<h2>Functionality</h2>")
+            document.write("The length property returns the length of a string: first")
+            document.write("<h2>Example</h2>")
+            document.write(aysh_txt.replace("my","yours"));
+
+            var text1 = "Hello World!";       // String
+            var text2 = text1.toUpperCase();
+
+            var text1 = "Hello World!";       // String
+            var text2 = text1.toLowerCase();
+
+            var text1 = "Hello";
+            var text2 = "World";
+            var text3 = text1.concat(" ", text2);
+
+            var str = "       Hello World!        ";
+            alert(str.trim());
+ 
+            var str = "HELLO WORLD";
+            str.charAt(0);
+
+            var str = "HELLO WORLD";
+            str.charCodeAt(0);    
+
+            var txt = "a,b,c,d,e";   // String
+            txt.split(",");          // Split on commas
+            txt.split(" ");          // Split on spaces
+            txt.split("|");          // Split on pipe
+
+            var txt = "Hello";       // String
+            txt.split("");  
+
+        }
+    </script>
+</body>
+</html>
