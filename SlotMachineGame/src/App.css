@@ -1,0 +1,106 @@
+.App {
+  text-align: center;
+}
+
+.header{
+  width:100%;
+  padding:10px;
+  text-align: center;
+  font-weight: bolder;
+  color: rgb(17, 16, 16);
+  background-color: transparent;
+  /* text-decoration: underline; */
+/*  */
+  /* background-image: linear-gradient(to top,rgba(15, 105, 105, 0.678), rgba(28, 146, 97, 0.726)); */
+  /* background-color: rgb(114, 18, 106); */
+  font-family: cursive;
+}
+
+.cardhead
+{
+  display: inline-block;
+  transition-property: width;
+  transition-duration: 1s;
+  margin: 0 auto;
+  box-shadow:"20px 10px 30px black";
+}
+.background
+{
+  
+  margin: 0 auto;
+  text-align: center;
+  background-color: transparent;
+  /* background-image: linear-gradient(to top,red, orange); */
+}
+ .card
+{
+  margin: 0 auto; 
+  /* width:903px; */
+ width: 60%;
+ border: none;
+}
+.cardhead:hover
+{
+  width: 800px;
+}
+.cardhead:hover .overlay {
+  opacity: 1;
+  background-color: black;
+}
+.overlay {
+  position: absolute; 
+  bottom: 40%;
+  right:4%; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.274); /* Black see-through */
+  color: #f1f1f1; 
+  width: 90%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+
+
+.backgroundSlot
+{
+  max-width: 497px;
+  min-height: 450px;
+  margin: 0 auto;
+  height: 700px;
+  text-align: center;
+  box-shadow: 2px 10px 30px rgba(24, 22, 22, 0.562);
+  background-image: linear-gradient(to top,rgba(15, 105, 105, 0.678), rgba(28, 146, 97, 0.726));
+
+  /* background-image: linear-gradient(to top,red, orange); */
+}
+
+.SlotButton
+{
+  background-color: black;
+  color: white;
+  padding: 15px;
+  font-size: large;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(218, 214, 214, 0.918);
+}
+.countdisplay
+{
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(8, 8, 8);
+  color: white;
+}
+.CountButton
+{
+  background-color: rgb(235, 227, 227);
+  color: white;
+  padding: 30px;
+  font-size: large;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(17, 16, 16, 0.918); 
+}
