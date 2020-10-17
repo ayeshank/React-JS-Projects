@@ -1,0 +1,53 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.score
+{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image:linear-gradient(to right,rgba(12, 11, 12, 0.582),rgba(20, 19, 19, 0.548));
+  padding: 3%;
+  box-shadow: 10px 6px 20px gray;
+  color: white;
+}
+.options
+{
+background-color: rgb(223, 215, 223);
+color: black;
+border: none;
+padding: 20px;
+margin-top: 3px;
+width: 100%;
+text-align: left;
+
+}
+.options:hover
+{
+  background-image:linear-gradient(to right,rgb(95, 6, 95),rgb(241, 153, 167));
+    color: white;
+}
+.questions
+{
+  text-align: left;
+}
+.questionnaire
+{
+
+  max-width: 400px;
+  min-height: 450px;
+  margin: 0 auto;
+  background-color: #10f087b6;
+ 
+  padding: 15px 50px;
+
+  background-image:linear-gradient(to right,rgba(128, 0, 128, 0.623),pink);
+
+font-family: sans-serif;
+  /* width: 100%; */
+  /* margin-left: 20%; */
+  padding-left: 10px;
+  padding-right: 10px;
+
+  box-shadow: 2px 10px 20px gray;
+}
